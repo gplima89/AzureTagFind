@@ -18,12 +18,12 @@
   Search across entire tenant (subject to RBAC permissions).
 
 .EXAMPLE
-  .\tagvaluefind.ps1 -TagValue "9381" -SearchByValue -UseTenantScope
-  Finds all resources where any tag has the value "9381"
+  .\tagvaluefind.ps1 -TagValue "Example" -SearchByValue -UseTenantScope
+  Finds all resources where any tag has the value "Example"
 
 .EXAMPLE
-  .\tagvaluefind.ps1 -TagName "9381" -SearchByName -UseTenantScope
-  Finds all resources that have a tag named "9381"
+  .\tagvaluefind.ps1 -TagName "Example" -SearchByName -UseTenantScope
+  Finds all resources that have a tag named "Example"
 
 .EXAMPLE
   .\tagvaluefind.ps1 -TagName "Environment" -SearchByName -UseTenantScope
@@ -52,8 +52,8 @@ if (-not (Get-AzContext)) {
 if (-not $SearchByValue -and -not $SearchByName) {
     Write-Error "You must specify either -SearchByValue or -SearchByName"
     Write-Host "`nExamples:" -ForegroundColor Cyan
-    Write-Host "  Search by value: .\tagvaluefind.ps1 -TagValue '9381' -SearchByValue -UseTenantScope" -ForegroundColor Gray
-    Write-Host "  Search by name:  .\tagvaluefind.ps1 -TagName '9381' -SearchByName -UseTenantScope" -ForegroundColor Gray
+    Write-Host "  Search by value: .\tagvaluefind.ps1 -TagValue 'Example' -SearchByValue -UseTenantScope" -ForegroundColor Gray
+    Write-Host "  Search by name:  .\tagvaluefind.ps1 -TagName 'Example' -SearchByName -UseTenantScope" -ForegroundColor Gray
     exit 1
 }
 
