@@ -72,10 +72,10 @@ You need appropriate RBAC permissions to query Azure Resource Graph:
 ### Examples
 
 #### Example 1: Search by Tag Value
-Find all resources where any tag has the value "9381":
+Find all resources where any tag has the value "Example":
 
 ```powershell
-.\tagvaluefind.ps1 -TagValue "9381" -SearchByValue -UseTenantScope
+.\tagvaluefind.ps1 -TagValue "Example" -SearchByValue -UseTenantScope
 ```
 
 #### Example 2: Search by Tag Name
@@ -112,15 +112,15 @@ The script displays results in a formatted table with the following columns:
 Example output:
 ```
 ========================================
-RESOURCES WITH TAG VALUE: 9381
+RESOURCES WITH TAG VALUE: Example
 ========================================
-Found 3 resources with tag value '9381'
+Found 3 resources with tag value 'Example'
 
 name                  tagKey      tagValue type                          resourceGroup  location
 ----                  ------      -------- ----                          -------------  --------
-webapp-prod-001       ProjectID   9381     Microsoft.Web/sites           rg-prod        eastus
-sqldb-analytics       CostCode    9381     Microsoft.Sql/servers         rg-database    westus2
-storage-logs-prod     Department  9381     Microsoft.Storage/storageAc.. rg-storage     centralus
+webapp-prod-001       ProjectID   Example     Microsoft.Web/sites           rg-prod        eastus
+sqldb-analytics       CostCode    Example     Microsoft.Sql/servers         rg-database    westus2
+storage-logs-prod     Department  Example     Microsoft.Storage/storageAc.. rg-storage     centralus
 
 ========================================
 Total: 3 resources
@@ -169,4 +169,6 @@ This project is open source and available under the MIT License.
 
 ## Author
 
-Guillermo Lima
+Guil Lima
+Microsoft - IaaS/IA CSA
+guillima@microsoft.com
