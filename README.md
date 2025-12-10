@@ -169,6 +169,6 @@ This project is open source and available under the MIT License.
 
 ## Author
 
-Guil Lima
-Microsoft - IaaS/IA CSA
-guillima@microsoft.com
+Guil Lima  
+Microsoft - IaaS/IA CSA  
+guillima@microsoft.com  
